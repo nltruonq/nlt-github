@@ -19,22 +19,23 @@
     }
   </style>
   <body>
-    <h2>
-      <center>Chao cac ban</center>
-    </h2>
     <script>
       var hoveredNo = function() {
         var btn = document.getElementById("no");
-        var top = Math.floor(Math.random()*600);
-        var left = Math.floor(Math.random()*700);
+        var top = Math.floor(Math.random() * 400);
+        var left = Math.floor(Math.random() * 800);
+        
         btn.style.top = top;
         btn.style.left = left;
-      }
+      };
       var clickYes = function() {
         alert("Biết ngay :)))");
-      }
+      };
     </script>
+    <h2>
+      <center>Chào các bạn</center>
+    </h2>
     <button id="yes" onclick="clickYes()">Có!</button>
-    <button id="no" onclick="hoveredNo()">Không!</button>
+    <button id="no" onmouseover="hoveredNo()">Không!</button>
   </body>
 </html>
